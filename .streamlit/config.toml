@@ -1,0 +1,6 @@
+[server]
+headless = true
+# baseUrlPath = "tracking"
+
+[browser]
+serverAddress = "0.0.0.0"
