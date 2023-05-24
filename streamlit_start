@@ -1,0 +1,8 @@
+#!/bin/bash
+NAME=streamlit-app
+
+DIR=/home/hl1sqi/work/Projects/the_aiiot/aiiot_demo
+cd $DIR
+
+# exec pipenv run streamlit run 🏠Home.py
+exec pipenv run nohup streamlit run 🏠Home.py
