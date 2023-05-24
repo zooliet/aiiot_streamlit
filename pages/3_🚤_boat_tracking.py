@@ -110,7 +110,7 @@ for result in model.track(source=vid_file, show=False, stream=True, agnostic_nms
     # st3_text.markdown(f"**{fps:.2f}**")
 
     output.image(frame)
-    cv2.waitKey(10)
+    cv2.waitKey(30)
     # if (cv2.waitKey(30) == 27):
     #     break
 
