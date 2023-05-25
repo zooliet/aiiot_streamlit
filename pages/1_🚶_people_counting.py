@@ -10,6 +10,13 @@ from supervision.draw.color import Color
 import cv2
 
 # st.set_page_config(layout="wide")
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 LINE_START = sv.Point(720, 330)
 LINE_END = sv.Point(0, 330)

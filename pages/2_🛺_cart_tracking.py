@@ -11,6 +11,13 @@ import cv2
 import numpy as np
 
 # st.set_page_config(layout="wide")
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.title("카트 트래킹")
 st.markdown("---")
