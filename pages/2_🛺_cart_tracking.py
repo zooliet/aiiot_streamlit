@@ -81,6 +81,8 @@ output = st.empty()
 
 prev_time = 0
 curr_time = 0
+curr_frame = 0
+show_interval = 10
 
 selected_classes = [7, 8]
 
@@ -118,9 +120,11 @@ for result in model.track(source=vid_file, show=False, stream=True, agnostic_nms
     # st1_text.markdown(f"**{height}**")
     # st2_text.markdown(f"**{width}**")
     # st3_text.markdown(f"**{fps:.2f}**")
-
-    output.image(frame)
-    cv2.waitKey(30)
+ 
+   if (curr_frame % show_interval == 0):
+        output.image(frame)
+    curr_frame += 1
+    # cv2.waitKey(30)
     # if (cv2.waitKey(30) == 27):
     #     break
 
