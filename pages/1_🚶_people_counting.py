@@ -118,7 +118,7 @@ for result in model.track(source=vid_file, show=False, stream=True, agnostic_nms
     # st1_text.markdown(f"**{height}**")
     # st2_text.markdown(f"**{width}**")
     # st3_text.markdown(f"**{fps:.2f}**")
-   if (curr_frame % show_interval == 0):
+    if (curr_frame % show_interval == 0):
         output.image(frame)
     curr_frame += 1
     # cv2.waitKey(30)
